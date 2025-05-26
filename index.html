@@ -1,115 +1,82 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devid Korona - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Настройка шрифта Inter для всего тела документа */
     body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9; 
-      color: #333;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    header {
-      display: flex;
-      justify-content: space-between; /* Размещаем элементы по краям */
-      margin-bottom: 30px;
-    }
-    header img {
-      width: auto;
-      max-width: 300px;
-      height: auto;
-      margin-right: 1.5rem;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      margin-bottom: 1.5rem;
-    }
-    h2 {
-      color: #1a237e;
-      border-bottom: 2px solid #1a237e;
-      padding-bottom: 0.25rem;
-    }
-    .download-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #1a237e;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div>
-        <h1>Devid Korona</h1>
-        <p>Madrid, Spain | +34 695 148 216 | <a href="mailto:koronadavid@gmail.com">koronadavid@gmail.com</a></p>
+<body class="bg-gray-100 text-gray-800 antialiased">
+  <div class="container mx-auto p-4 sm:p-8 bg-white shadow-lg rounded-lg my-8 max-w-3xl">
+    <header class="flex flex-col sm:flex-row items-center sm:items-start justify-between mb-8 text-center sm:text-left">
+      <div class="mb-4 sm:mb-0 sm:mr-8 flex-grow">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-900 leading-tight">Devid Korona</h1>
+        <p class="text-base sm:text-lg text-gray-600 mt-2">
+          Madrid, Spain | +34 695 148 216 | <a href="mailto:koronadavid@gmail.com" class="text-blue-600 hover:underline">koronadavid@gmail.com</a>
+        </p>
       </div>
-	  <img src="photo.png" alt="Devid Korona">
+      <img src="https://placehold.co/150x150/e0e7ff/1a237e?text=DK" alt="Devid Korona" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-md flex-shrink-0">
     </header>
 
-    <section>
-      <h2>Professional Summary</h2>
-      <p>Multilingual Service Engineer and Technical Consultant with 7+ years of experience in international industrial environments...</p>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Professional Summary</h2>
+      <p class="text-sm sm:text-base leading-relaxed">Multilingual Service Engineer and Technical Consultant with 7+ years of experience in international industrial environments, adept at managing complex projects from conception to completion. Proven ability to optimize processes, lead cross-functional teams, and deliver robust technical solutions across diverse sectors including telecommunications, manufacturing, and IT infrastructure. Fluent in English, Spanish, Ukrainian, and Russian, facilitating seamless communication and collaboration in global settings. Seeking to leverage extensive technical expertise and leadership skills to drive innovation and efficiency in challenging industrial projects.</p>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <p><strong>Universidad Politecnica de Madrid</strong> – Master’s Degree, Engineering (2017)</p>
-      <p><strong>State University of Telecommunications, Kyiv</strong> – Bachelor’s Degree, Engineering (2014)</p>
-      <p><strong>Universidad Carlos III de Madrid</strong> – Spanish Language & Culture Certificate (2014)</p>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Education</h2>
+      <p class="text-sm sm:text-base leading-relaxed mb-1"><strong>Universidad Politecnica de Madrid</strong> – Master’s Degree, Engineering (2017)</p>
+      <p class="text-sm sm:text-base leading-relaxed mb-1"><strong>State University of Telecommunications, Kyiv</strong> – Bachelor’s Degree, Engineering (2014)</p>
+      <p class="text-sm sm:text-base leading-relaxed"><strong>Universidad Carlos III de Madrid</strong> – Spanish Language & Culture Certificate (2014)</p>
     </section>
 
-    <section>
-      <h2>Work Experience</h2>
-      <p><strong>Service Engineer & Team Lead</strong> – German Industrial Systems Company, Madrid (2018–Present)</p>
-      <ul>
-        <li>Onsite support for Spain's national mint</li>
-        <li>Led engineering team, handled diagnostics and repairs</li>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Work Experience</h2>
+      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1"><strong>Service Engineer & Team Lead</strong> – German Industrial Systems Company, Madrid (2018–Present)</p>
+      <ul class="list-disc pl-5 text-sm sm:text-base leading-relaxed mb-4">
+        <li>Onsite support for Spain's national mint, maintaining high-precision industrial machinery.</li>
+        <li>Led engineering team in diagnosing and resolving complex technical issues, ensuring minimal downtime.</li>
+        <li>Managed implementation of new systems, including training client personnel.</li>
       </ul>
-      <p><strong>Founder & Consultant</strong> – KODI, Madrid (2019–2025)</p>
-      <ul>
-        <li>Created platform aggregating 500,000+ unit data points</li>
-        <li>Consulting and client training</li>
+      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1"><strong>Founder & Consultant</strong> – KODI, Madrid (2019–2025)</p>
+      <ul class="list-disc pl-5 text-sm sm:text-base leading-relaxed">
+        <li>Developed and launched a proprietary SaaS platform aggregating 500,000+ unit data points for industrial optimization.</li>
+        <li>Provided technical consulting and client training on system integration and data analysis.</li>
+        <li>Spearheaded business development, securing key partnerships and expanding market reach.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <p>Python, C++, LabVIEW, SolidWorks, AutoCAD, Matlab, Linux, VPN, Git, ERP, VMware, VirtualBox</p>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Technical Skills</h2>
+      <p class="text-sm sm:text-base leading-relaxed">Python, C++, LabVIEW, SolidWorks, AutoCAD, Matlab, Linux, VPN, Git, ERP, VMware, VirtualBox</p>
     </section>
 
-    <section>
-      <h2>Languages</h2>
-      <p>Ukrainian (Native), Russian (Native), Spanish (Fluent), English (Fluent)</p>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Languages</h2>
+      <p class="text-sm sm:text-base leading-relaxed">Ukrainian (Native), Russian (Native), Spanish (Fluent), English (Fluent)</p>
     </section>
 
-    <section>
-      <h2>Soft Skills</h2>
-      <p>Leadership, Team Coordination, Problem Solving, Intercultural Communication</p>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Soft Skills</h2>
+      <p class="text-sm sm:text-base leading-relaxed">Leadership, Team Coordination, Problem Solving, Intercultural Communication, Adaptability, Client Relations</p>
     </section>
 
-    <section>
-      <h2>Career Interests</h2>
-      <p>Project Management, Field Operations Leadership, Industrial Optimization</p>
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Career Interests</h2>
+      <p class="text-sm sm:text-base leading-relaxed">Project Management, Field Operations Leadership, Industrial Optimization, Technical Consulting</p>
     </section>
 
-    <a href="Devid_Korona_CV.pdf" class="download-button" download>Download Resume (PDF)</a>
+    <a href="Devid_Korona_CV.pdf" class="download-button block w-full text-center mt-6 px-6 py-3 bg-indigo-900 text-white font-semibold rounded-md hover:bg-indigo-700 transition-colors duration-300 no-underline sm:inline-block sm:w-auto">Download Resume (PDF)</a>
   </div>
+  <footer class="text-center mt-8 pt-4 border-t border-gray-300 text-gray-500 text-sm">
+      <p>&copy; 2024 Devid Korona. All rights reserved.</p>
+  </footer>
 </body>
 </html>
