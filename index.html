@@ -3,13 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devid Korona - Resume</title>
+  <title>Devid Korona - Portfolio & Overview</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     /* Настройка шрифта Inter для всего тела документа */
     body {
       font-family: 'Inter', sans-serif;
+    }
+    /* Стили для более аккуратных списков. Применяются к ul с классом custom-list */
+    ul.custom-list {
+      list-style: none; /* Убираем стандартные маркеры */
+      padding-left: 0;
+    }
+    ul.custom-list li {
+      position: relative;
+      padding-left: 1.5em; /* Отступ для кастомного маркера */
+      margin-bottom: 0.5em;
+    }
+    ul.custom-list li::before {
+      content: '•'; /* Кастомный маркер */
+      color: #4338CA; /* Цвет маркера (индиго-фиолетовый, подходящий к Tailwind) */
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   </style>
 </head>
@@ -21,59 +38,93 @@
         <p class="text-base sm:text-lg text-gray-600 mt-2">
           Madrid, Spain | +34 695 148 216 | <a href="mailto:koronadavid@gmail.com" class="text-blue-600 hover:underline">koronadavid@gmail.com</a>
         </p>
+        <p class="text-base sm:text-lg text-gray-600 mt-1">
+          <a href="https://www.linkedin.com/in/devid-korona-a1aa84119" class="text-blue-600 hover:underline" target="_blank">LinkedIn Profile</a>
+        </p>
       </div>
       <img src="photo.png" alt="Devid Korona" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-md flex-shrink-0">
     </header>
 
     <section class="mb-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Professional Summary</h2>
-      <p class="text-sm sm:text-base leading-relaxed">Multilingual Service Engineer and Technical Consultant with 7+ years of experience in international industrial environments, adept at managing complex projects from conception to completion. Proven ability to optimize processes, lead cross-functional teams, and deliver robust technical solutions across diverse sectors including telecommunications, manufacturing, and IT infrastructure. Fluent in English, Spanish, Ukrainian, and Russian, facilitating seamless communication and collaboration in global settings. Seeking to leverage extensive technical expertise and leadership skills to drive innovation and efficiency in challenging industrial projects.</p>
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Professional Overview & Career Goals</h2>
+      <p class="text-sm sm:text-base leading-relaxed">
+        A <strong>multilingual and results-driven Technical Project Leader</strong> with 7+ years of experience in designing, implementing, and optimizing complex industrial automation and software solutions. My background blends deep technical expertise (software, hardware, automation) with proven leadership and entrepreneurial skills, developed through founding my own company and leading diverse projects from concept to deployment. I excel at translating technical vision into actionable plans, driving efficiency, and fostering collaborative team environments.
+        <br><br>
+        <strong>Actively seeking Project Management or Tech Lead roles</strong> where I can leverage my comprehensive system engineering background and cross-functional leadership to deliver impactful technical solutions and contribute to strategic growth.
+      </p>
+    </section>
+
+    <section class="mb-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Featured Projects & Leadership Highlights</h2>
+      
+      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1">
+        <strong>Founder & Project Lead</strong> – KODE, Madrid (March 2023–Present)
+      </p>
+      <ul class="custom-list pl-5 text-sm sm:text-base leading-relaxed mb-4">
+        <li>Established KODE as an automation and data solutions company, personally building the team and securing initial clients.</li>
+        <li><strong>Led full project lifecycle</strong> for a major EU construction client, developing custom platforms for data compilation and process automation.</li>
+        <li><strong>Increased client operational efficiency by 35%</strong> through innovative software solutions.</li>
+        <li>Managed all aspects of business development, client relations, and project delivery.</li>
+        </ul>
+
+      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1">
+        <strong>Project Lead & Main Creator</strong> – Atlas Robots, Madrid (April 2017 – November 2017)
+      </p>
+      <ul class="custom-list pl-5 text-sm sm:text-base leading-relaxed mb-4">
+        <li><strong>Served as the sole Project Lead and Main Creator</strong>, overseeing both software and mechanical engineering for autonomous shopping carts.</li>
+        <li><strong>Directed complete software architecture and coding</strong>, including server monitoring and complex subsystem software.</li>
+        <li>Integrated cutting-edge technologies (Arduino, UWB geolocation with <strong>3cm accuracy</strong>) to deliver a fully functional prototype.</li>
+        <li>Managed all technical challenges independently, demonstrating strong problem-solving and execution capabilities.</li>
+        </ul>
+
+      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1">
+        <strong>Technical Specialist & Process Optimizer</strong> – Muehlbauer Automation Spain, Madrid (April 2018–Present)
+      </p>
+      <ul class="custom-list pl-5 text-sm sm:text-base leading-relaxed mb-4">
+        <li>Provide technical support and setup for high-precision equipment used in government document production.</li>
+        <li><strong>Led diagnosis and resolution of complex technical issues</strong>, minimizing downtime.</li>
+        <li><strong>Contributed to process optimization efforts, increasing efficiency by 35%</strong> for operational workflows.</li>
+        <li>Coordinated client interaction and provided on-site technical training.</li>
+      </ul>
     </section>
 
     <section class="mb-6">
       <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Education</h2>
-      <p class="text-sm sm:text-base leading-relaxed mb-1"><strong>Universidad Politecnica de Madrid</strong> – Master’s Degree, Engineering (2017)</p>
-      <p class="text-sm sm:text-base leading-relaxed mb-1"><strong>State University of Telecommunications, Kyiv</strong> – Bachelor’s Degree, Engineering (2014)</p>
-      <p class="text-sm sm:text-base leading-relaxed"><strong>Universidad Carlos III de Madrid</strong> – Spanish Language & Culture Certificate (2014)</p>
+      <p class="text-sm sm:text-base leading-relaxed mb-1"><strong>Universidad Politécnica de Madrid</strong> – Master in Systems Engineering and Services for the Information Society (2015 – 2017)</p>
+      <p class="text-sm sm:text-base leading-relaxed mb-1"><strong>State University of Telecommunications, Kyiv</strong> – Bachelor of Science in Technology, Computer networks and telecommunications (2010 – 2014)</p>
+      <p class="text-sm sm:text-base leading-relaxed"><strong>Universidad Carlos III de Madrid</strong> – Bachelor's degree, Spanish (2014 – 2015)</p>
     </section>
 
     <section class="mb-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Work Experience</h2>
-      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1"><strong>Service Engineer & Team Lead</strong> – German Industrial Systems Company, Madrid (2018–Present)</p>
-      <ul class="list-disc pl-5 text-sm sm:text-base leading-relaxed mb-4">
-        <li>Onsite support for Spain's national mint, maintaining high-precision industrial machinery.</li>
-        <li>Led engineering team in diagnosing and resolving complex technical issues, ensuring minimal downtime.</li>
-        <li>Managed implementation of new systems, including training client personnel.</li>
-      </ul>
-      <p class="text-sm sm:text-base leading-relaxed font-semibold mb-1"><strong>Founder & Consultant</strong> – KODI, Madrid (2019–2025)</p>
-      <ul class="list-disc pl-5 text-sm sm:text-base leading-relaxed">
-        <li>Developed and launched a proprietary SaaS platform aggregating 500,000+ unit data points for industrial optimization.</li>
-        <li>Provided technical consulting and client training on system integration and data analysis.</li>
-        <li>Spearheaded business development, securing key partnerships and expanding market reach.</li>
-      </ul>
-    </section>
-
-    <section class="mb-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Technical Skills</h2>
-      <p class="text-sm sm:text-base leading-relaxed">Python, C++, LabVIEW, SolidWorks, AutoCAD, Matlab, Linux, VPN, Git, ERP, VMware, VirtualBox</p>
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Key Skills</h2>
+      <p class="text-sm sm:text-base leading-relaxed">
+        <strong>Project Management:</strong> Agile Methodologies, Scrum, Jira, Risk Management, Stakeholder Management, Process Optimization, Requirements Gathering
+        <br>
+        <strong>Technical Expertise:</strong> Software Architecture, System Design, Automation, Industrial Automation, Python, C++, Linux, Git, SolidWorks, AutoCAD
+        <br>
+        <strong>Leadership & Soft Skills:</strong> Team Leadership, Technical Leadership, Mentoring, Problem Solving, Communication, Client Relations, Intercultural Communication
+      </p>
     </section>
 
     <section class="mb-6">
       <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Languages</h2>
-      <p class="text-sm sm:text-base leading-relaxed">Ukrainian (Native), Russian (Native), Spanish (Fluent), English (Fluent)</p>
+      <p class="text-sm sm:text-base leading-relaxed">Ukrainian (Native), Russian (Native), Spanish (Professional Working Proficiency), English (Professional Working Proficiency)</p>
     </section>
 
     <section class="mb-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Soft Skills</h2>
-      <p class="text-sm sm:text-base leading-relaxed">Leadership, Team Coordination, Problem Solving, Intercultural Communication, Adaptability, Client Relations</p>
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Certifications (Expected/In Progress)</h2>
+      <ul class="custom-list pl-5 text-sm sm:text-base leading-relaxed">
+        <li>Professional Scrum Master I (PSM I) / Certified ScrumMaster (CSM)</li>
+        <li>Google Project Management Professional Certificate (Coursera)</li>
+        </ul>
     </section>
 
     <section class="mb-6">
       <h2 class="text-xl sm:text-2xl font-bold text-indigo-900 border-b-2 border-indigo-900 pb-2 mb-4">Career Interests</h2>
-      <p class="text-sm sm:text-base leading-relaxed">Project Management, Field Operations Leadership, Industrial Optimization, Technical Consulting</p>
+      <p class="text-sm sm:text-base leading-relaxed">Project Management, Technical Leadership, Industrial Optimization, Solutions Architecture, Technical Consulting</p>
     </section>
 
-    <a href="Devid_Korona_CV.pdf" class="download-button block w-full text-center mt-6 px-6 py-3 bg-indigo-900 text-white font-semibold rounded-md hover:bg-indigo-700 transition-colors duration-300 no-underline sm:inline-block sm:w-auto">Download Resume (PDF)</a>
+    <a href="Devid_Korona_CV.pdf" class="download-button block w-full text-center mt-6 px-6 py-3 bg-indigo-900 text-white font-semibold rounded-md hover:bg-indigo-700 transition-colors duration-300 no-underline sm:inline-block sm:w-auto">Download Full Resume (PDF)</a>
   </div>
   <footer class="text-center mt-8 pt-4 border-t border-gray-300 text-gray-500 text-sm">
       <p>&copy; 2024 Devid Korona. All rights reserved.</p>
